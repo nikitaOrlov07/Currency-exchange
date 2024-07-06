@@ -16,7 +16,11 @@ import java.util.Map;
 @Service
 @Slf4j
 public class CurrentExchangeServiceimpl implements CurrencyExchangeService {
-    private String apiKey = "c313a02b21bf4d6d9a8c099ecfe57a6c";
+    String apiKey = "c313a02b21bf4d6d9a8c099ecfe57a6c";
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
 
     @Autowired
     private RestTemplate restTemplate;

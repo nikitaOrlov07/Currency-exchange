@@ -10,4 +10,8 @@ public interface CurrencyExchangeService {
     HashMap<Currency, Double> getAmountRelativelyToPopularCurrencies(Currency baseCurrency, Double amount);
 
     HashMap<Currency, Double> getExchangeRatesRelativeToBase(Currency baseCurrency);
+
+    HashMap<Currency, Double> getHistoricalExchange(String data);
+
+    HashMap<Currency, String> getCurrencyInformation();
 }

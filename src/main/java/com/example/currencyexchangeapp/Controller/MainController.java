@@ -5,7 +5,9 @@ import com.example.currencyexchangeapp.Model.Value;
 import com.example.currencyexchangeapp.Service.CurrencyExchangeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.tags.Param;
 
+import java.util.Date;
 import java.util.HashMap;
 
 @RestController
@@ -34,5 +36,15 @@ public class MainController {
     public HashMap<Currency,Double> getExchangeRate(@RequestParam Currency currency)
     {
         return currencyExchangeService.getExchangeRatesRelativeToBase(currency);
+    }
+    @GetMapping("/historicalExchangeRate")
+    public HashMap<Currency,Double> getHistoricalExchangeRate(@RequestParam String date)
+    {
+        return currencyExchangeService.getHistoricalExchange(date);
+    }
+    @GetMapping("/currencyInformation")
+    public HashMap<Currency,String> getCurrencyInformation()
+    {
+        return  currencyExchangeService.getCurrencyInformation();
     }
 }

@@ -1,7 +1,7 @@
 package com.example.currencyexchangeapp.Service;
 
 import com.example.currencyexchangeapp.Model.Currency;
-import com.example.currencyexchangeapp.Model.OpenExchangeRatesResponse;
+import com.example.currencyexchangeapp.DTO.OpenExchangeRatesResponse;
 import com.example.currencyexchangeapp.Service.impl.CurrentExchangeServiceimpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

@@ -65,14 +65,5 @@ Postman is recommended for testing the application. A Postman collection with sa
 - **GET /currencyExchange/historicalExchangeRate:** Historical exchange rates
 - **GET /currencyExchange/currencyInformation:** Currency information
 
-## 🤝 Contributing
-We welcome contributions to the project! Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.
-
-## 📄 License
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgements
-- **Open Exchange Rates** for providing the currency exchange rate data
-- All contributors who have helped shape this project
 
 ⭐ Feel free to star the repo if you find this project useful!
